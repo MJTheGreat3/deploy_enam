@@ -171,3 +171,4 @@ wsproto==1.2.0
 yarl
 yfinance
 zipp
+flask-cors
