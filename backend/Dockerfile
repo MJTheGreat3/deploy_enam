@@ -4,7 +4,8 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y gcc libpq-dev python3-dev
 
-COPY . .
+COPY backend/ .
+COPY frontend/ ../frontend/
 
 RUN pip install --no-cache-dir -r requirements.txt
 
