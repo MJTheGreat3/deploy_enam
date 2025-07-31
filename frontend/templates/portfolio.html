@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Portfolio Management{% endblock %}
+
+{% block content %}
+<section id="portfolio" class="container-fluid p-4 d-flex flex-column" style="height: 100vh; overflow: hidden;">
+  <h1 class="mb-3 text-center">Portfolio <span class="text-primary">Management</span></h1>
+
+  <div class="search-bar mb-3 position-relative">
+    <input
+      type="text"
+      id="companySearch"
+      class="form-control"
+      placeholder="Search companies..."
+    />
+    <div
+      id="searchResults"
+      class="list-group"
+      style="display:none; position:absolute; top:100%; left:0; width:100%; z-index:1000; max-height:300px; overflow-y:auto; border:1px solid #ced4da; border-radius:0.25rem; margin-top:5px;"
+    ></div>
+  </div>
+
+  <div id="portfolioBox" class="rounded shadow-sm p-3 bg-light mb-3 overflow-auto">
+    <div id="companyList" class="portfolio-grid"></div>
+  </div>
+
+  <div class="text-center">
+    <button class="btn btn-success" id="applyChangesBtn">Apply Changes</button>
+  </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/portfolio.css') }}">
+  <script src="{{ url_for('static', filename='js/portfolio.js') }}"></script>
+{% endblock %}

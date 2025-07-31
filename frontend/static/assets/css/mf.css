@@ -1,0 +1,333 @@
+/* Layout */
+.mutual-fund-container {
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content-wrapper {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  min-height: 0;
+  gap: 25px;
+}
+
+/* Fund Filter Pane - entire left sidebar */
+.filter-pane {
+  width: 280px;
+  min-width: 280px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.filter-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #f8f9fa;
+  flex-shrink: 0;
+}
+
+.filter-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 16px 20px;
+}
+
+.badges-container {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 5px;
+}
+
+/* Fund Badge Styles */
+.fund-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.fund-badge.active {
+  background-color: #198754;
+  color: white;
+}
+
+.fund-badge.inactive {
+  background-color: #e9ecef;
+  color: #6c757d;
+}
+
+/* Content Area */
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Stock filter bar at top of content area */
+.stock-bar {
+  width: 100%;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+  flex-shrink: 0;
+  z-index: 3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Stock bar header with title and Remove All button */
+.stock-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#clearStockFilters {
+  background-color: transparent;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#clearStockFilters:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Choices styling */
+.choices {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.choices__inner {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px !important;
+  border: 1px solid #dee2e6 !important;
+  background-color: #f8f9fa !important;
+  padding: 10px 12px !important;
+  cursor: text;
+  gap: 8px;
+}
+
+.choices__list--multiple {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 4px 0;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.choices__item--selectable {
+  display: inline-flex;
+  align-items: center;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 14px;
+  color: #495057;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.choices__item--selectable:hover {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+}
+
+.choices__button {
+  background: url("/static/assets/img/close.svg") center center no-repeat;
+  background-size: 12px 12px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  margin-left: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.choices__button:hover {
+  opacity: 1;
+}
+
+.choices__list--dropdown {
+  max-height: 250px;
+  overflow-y: auto;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  margin-top: 5px;
+  background-color: white;
+  padding: 6px 0;
+}
+
+.choices__list--dropdown .choices__item--selectable {
+  padding: 10px 16px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  transition: background-color 0.2s;
+}
+
+.choices__list--dropdown .choices__item--selectable:hover {
+  background-color: #e9ecef;
+}
+
+.choices__list--dropdown.is-active {
+  display: block;
+}
+
+.choices__list--dropdown:not(.is-active) {
+  display: none;
+}
+
+/* Table layout */
+#output {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.table-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+}
+
+.table-responsive {
+  flex: 1;
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #e9ecef;
+  color: #333;
+  font-weight: 600;
+  padding: 12px;
+  border-bottom: 2px solid #ced4da;
+  text-align: center;
+  z-index: 2;
+}
+
+.table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #e9ecef;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+
+.table tbody tr:nth-child(odd) td {
+  background-color: #f9f9fb;
+}
+
+/* Center align Buy/Sell values */
+.table td.text-center {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Highlight for Buy cells with value */
+.buy-cell {
+  background-color: #d4edda !important; /* Light green */
+}
+
+/* Highlight for Sell cells with value */
+.sell-cell {
+  background-color: #f8d7da !important; /* Light red */
+}
+
+/* Darker font color for all data cells */
+.table-dark-text {
+  color: #343a40; /* Bootstrap’s text-dark */
+}
+
+/* Remove global hover override */
+.table-hover tbody tr:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+  cursor: default !important;
+}
+
+/* Highlight all cells on hover */
+tr.hover-green:hover td {
+  background-color: #c3e6cb !important;
+  color: #1e4620 !important;
+  cursor: default;
+}
+
+tr.hover-red:hover td {
+  background-color: #f5c6cb !important;
+  color: #721c24 !important;
+  cursor: default;
+}
+
+/* Remove hover effect *only* from the rowspan stock cell */
+td.rowspan-stock:hover {
+  background-color: transparent !important;
+  color: #343a40 !important; /* match .table-dark-text */
+  cursor: default;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content-wrapper {
+    flex-direction: column;
+  }
+
+  .filter-pane {
+    width: 100%;
+    height: auto;
+  }
+
+  .choices__list--dropdown {
+    max-height: 200px;
+  }
+}

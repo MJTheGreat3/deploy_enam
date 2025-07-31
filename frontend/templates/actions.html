@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}
+Corporate Actions Viewer
+{% endblock %}
+
+{% block content %}
+<h2 class="mb-3 text-center">Corporate <span class="text-primary">Actions</span></h2>
+
+<div class="filters">
+  <!-- Security Filter Row -->
+  <div class="filter-row">
+    <label class="filter-label" for="securityFilter">Security Name</label>
+    <div class="filter-input">
+      <select id="securityFilter" multiple></select>
+    </div>
+    <button id="applySecurityBtn">Apply</button>
+  </div>
+  <!-- Ex Date Row -->
+  <div class="filter-row">
+    <label class="filter-label" for="exDateFilter">Ex Date</label>
+    <div class="filter-input">
+      <input type="date" id="exDateFilter">
+    </div>
+  </div>
+  <!-- Record Date Row -->
+  <div class="filter-row">
+    <label class="filter-label" for="recordDateFilter">Record Date</label>
+    <div class="filter-input">
+      <input type="date" id="recordDateFilter">
+    </div>
+  </div>
+</div>
+
+<div id="grid" class="grid"></div>
+{% endblock %}
+
+{% block extra_scripts %}
+<!-- Choices.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- PapaParse (if you want your version) -->
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+<!-- Local CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/actions.css') }}" />
+
+<!-- Local JS -->
+<script src="{{ url_for('static', filename='js/actions.js') }}"></script>
+{% endblock %}

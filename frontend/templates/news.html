@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block title %}Live News{% endblock %}
+
+{% block content %}
+  <h2 class="text-center">Live <span class="text-primary">News</span></h2>
+
+  <div id="lastUpdatedContainer" class="last-updated text-center mb-3">
+    Last Updated: <span id="lastUpdated">Loading...</span>
+  </div>
+
+  <div id="filters" class="container mb-4">
+    <div class="row g-2">
+      <div class="col-md-3">
+        <select id="sourceFilter" class="form-select">
+          <option value="">All Sources</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <select id="categoryFilter" class="form-select">
+          <option value="">All Categories</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search headline...">
+      </div>
+      <div class="col-md-2">
+        <button id="resetFilters" class="btn btn-secondary w-100">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-3">
+    <div class="d-flex justify-content-between align-items-center flex-wrap">
+      <div>
+        <label for="pageSize" class="form-label me-2">Articles per page:</label>
+        <select id="pageSize" class="form-select d-inline-block w-auto">
+          <option value="10">10</option>
+          <option value="25">25</option>
+          <option value="50" selected>50</option>
+          <option value="100">100</option>
+        </select>
+      </div>
+      <div id="paginationTop" class="pagination-controls"></div>
+    </div>
+  </div>
+
+  <div class="container table-responsive">
+    <table id="newsTable" class="table table-striped table-bordered">
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="container mt-3">
+    <div id="paginationBottom" class="pagination-controls"></div>
+  </div>
+
+  <button id="scrollTopBtn" title="Go to top" class="btn btn-primary" style="display: none; position: fixed; bottom: 40px; right: 40px; z-index: 999;">↑ Top</button>
+{% endblock %}
+
+{% block extra_scripts %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/news.css') }}">
+  <script src="{{ url_for('static', filename='js/news.js') }}"></script>
+  <script>
+    // Fetch and display the last updated time
+    function loadLastUpdated() {
+      fetch('/api/last-updated-news')
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('lastUpdated').textContent = data.last_updated_news || 'N/A';
+          console.log("[INFO] Last updated:", data.last_updated_news);
+        })
+        .catch(err => console.error("[ERROR] Fetching last updated:", err));
+    }
+
+    // Handle the refresh button click (already in navbar)
+    document.getElementById('refreshBtn').addEventListener('click', () => {
+      if (confirm("Run news refresh? This will fetch new news data from sources.")) {
+        fetch('/api/refresh-news-sync', { method: 'POST' })
+          .then(res => res.json())
+          .then(data => {
+            alert(data.message);
+            console.log("[INFO] Refresh logs:");
+            data.logs.forEach(line => console.log(line));
+            document.getElementById('lastUpdated').textContent = data.last_updated_news || 'N/A';
+            location.reload();
+          })
+          .catch(err => alert("Error triggering refresh: " + err));
+      }
+    });
+
+    // Load last updated time on page load
+    loadLastUpdated();
+  </script>
+{% endblock %}

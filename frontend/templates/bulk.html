@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Bulk Deals{% endblock %}
+
+{% block content %}
+<section class="container mt-4 mb-5">
+  <h2 class="mb-5 text-center">Bulk <span class="text-primary">Deals</span></h2>
+  <div class="d-flex justify-content-center">
+    <div class="w-100" style="max-width: 95vw; overflow-x: auto;">
+      <table id="bulkDealsTable" class="display nowrap" style="width: 100%; word-break: keep-all;"></table>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='js/bulk.js') }}"></script>
+{% endblock %}

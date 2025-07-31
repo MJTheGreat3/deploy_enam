@@ -1,0 +1,67 @@
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+/* Each Badge */
+.portfolio-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 1rem;
+  padding: 8px 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.portfolio-badge:hover {
+  background-color: #f1f3f5;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Symbol */
+.symbol {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #212529;
+  white-space: normal;
+}
+
+/* Name */
+.name {
+  font-size: 0.9rem;
+  color: #6c757d;
+  white-space: normal;
+}
+
+/* Remove Button */
+.portfolio-remove {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.close-icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.portfolio-remove:hover .close-icon {
+  transform: rotate(90deg);
+}

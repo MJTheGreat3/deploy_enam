@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}About - ENAM Dashboard{% endblock %}
+
+{% block content %}
+<section class="resume-section">
+  <div class="resume-section-content">
+    <h1 class="mb-0">
+      ENAM <span class="text-primary">Holdings</span>
+    </h1>
+    <br />
+    <div id="welcomeMessage" class="mb-4"></div>
+    <p class="lead mb-5">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis malesuada quam.
+    </p>
+  </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='js/about.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,52 @@
+/* Existing styles */
+
+.nowrap-cell {
+  white-space: nowrap !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: normal !important;
+}
+
+.wrap-cell {
+  white-space: normal !important;
+  word-break: break-word !important;
+}
+
+.download-icon {
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.download-icon:hover {
+  transform: rotateY(180deg);
+}
+
+table.dataTable thead th {
+  white-space: nowrap !important;
+}
+
+/* NEW: Center-align EVERYTHING in the DataTable */
+
+table.dataTable thead th,
+table.dataTable tbody td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Center-align all DataTables control UI */
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+  text-align: center;
+}
+
+/* Make filter input and pagination controls center themselves horizontally */
+.dataTables_wrapper .dataTables_filter input {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.dataTables_wrapper {
+  text-align: center;
+}

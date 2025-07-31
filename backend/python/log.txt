@@ -1,0 +1,1053 @@
+[2025-06-30 17:00:23] [NSE BULK] Attempt 1: from=31-05-2025 to=30-06-2025
+[2025-06-30 17:00:23] [NSE BULK] Homepage GET status=200
+[2025-06-30 17:00:23] [NSE BLOCK] Attempt 1: from=31-05-2025 to=30-06-2025
+[2025-06-30 17:00:23] [NSE BULK] API GET status=200
+[2025-06-30 17:00:23] [NSE BULK] Response JSON keys: ['data']
+[2025-06-30 17:00:24] [NSE BLOCK] Homepage GET status=200
+[2025-06-30 17:00:24] [NSE BLOCK] API GET status=200
+[2025-06-30 17:00:24] [NSE BLOCK] Response JSON keys: ['data']
+[2025-06-30 17:19:17] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-06-30 17:19:17] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-06-30 17:19:25] [NSE BULK] Attempt 2: from=31-05-2025 to=30-06-2025
+[2025-06-30 17:19:25] [NSE BLOCK] Attempt 2: from=31-05-2025 to=30-06-2025
+[2025-06-30 17:19:25] [NSE BLOCK] Homepage GET status=200
+[2025-06-30 17:19:25] [NSE BULK] Homepage GET status=200
+[2025-06-30 17:19:25] [NSE BLOCK] API GET status=200
+[2025-06-30 17:19:25] [NSE BLOCK] Response JSON keys: ['data']
+[2025-06-30 17:19:26] [NSE BULK] API GET status=200
+[2025-06-30 17:19:26] [NSE BULK] Response JSON keys: ['data']
+[2025-06-30 17:19:48] [NSE BULK] Attempt 1: from=31-05-2025 to=30-06-2025
+[2025-06-30 17:19:48] [NSE BLOCK] Attempt 1: from=31-05-2025 to=30-06-2025
+[2025-06-30 17:19:48] [NSE BULK] Attempt 1: from=31-05-2025 to=30-06-2025
+[2025-06-30 17:19:48] [NSE BLOCK] Attempt 1: from=31-05-2025 to=30-06-2025
+[2025-06-30 17:19:48] [NSE BULK] Homepage GET status=200
+[2025-06-30 17:19:48] [NSE BULK] API GET status=200
+[2025-06-30 17:19:48] [NSE BULK] Response JSON keys: ['data']
+[2025-06-30 17:19:48] [NSE BLOCK] Homepage GET status=200
+[2025-06-30 17:19:48] [NSE BULK] Homepage GET status=200
+[2025-06-30 17:19:48] [NSE BULK] API GET status=200
+[2025-06-30 17:19:48] [NSE BULK] Response JSON keys: ['data']
+[2025-06-30 17:19:48] [NSE BLOCK] API GET status=200
+[2025-06-30 17:19:48] [NSE BLOCK] Response JSON keys: ['data']
+[2025-06-30 17:19:49] [NSE BLOCK] Homepage GET status=200
+[2025-06-30 17:19:49] [NSE BLOCK] API GET status=200
+[2025-06-30 17:19:49] [NSE BLOCK] Response JSON keys: ['data']
+[2025-06-30 17:22:41] [NSE BULK] Attempt 1: from=31-05-2025 to=30-06-2025
+[2025-06-30 17:22:41] [NSE BULK] Homepage GET status=200
+[2025-06-30 17:22:41] [NSE BULK] API GET status=200
+[2025-06-30 17:22:41] [NSE BULK] Response JSON keys: ['data']
+[2025-06-30 17:22:42] [NSE BLOCK] Attempt 1: from=31-05-2025 to=30-06-2025
+[2025-06-30 17:22:43] [NSE BLOCK] Homepage GET status=200
+[2025-06-30 17:22:43] [NSE BLOCK] API GET status=200
+[2025-06-30 17:22:43] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 09:40:45] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 09:40:45] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 09:40:46] [NSE BULK] Homepage GET status=200
+[2025-07-01 09:40:46] [NSE BULK] Homepage GET status=200
+[2025-07-01 09:40:46] [NSE BULK] API GET status=200
+[2025-07-01 09:40:46] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 09:40:46] [NSE BULK] API GET status=200
+[2025-07-01 09:40:46] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 09:40:47] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 09:40:47] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 09:40:48] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 09:40:48] [NSE BLOCK] API GET status=200
+[2025-07-01 09:40:48] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 09:40:48] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 09:40:48] [NSE BLOCK] API GET status=200
+[2025-07-01 09:40:48] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 10:12:40] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 10:12:40] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 10:12:41] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 10:12:41] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 10:13:11] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 10:13:11] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 10:13:12] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 10:13:12] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 10:13:44] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 10:13:44] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 10:13:44] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 10:13:44] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 10:40:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 10:40:42] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 10:40:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 10:40:42] [NSE BULK] API GET status=200
+[2025-07-01 10:40:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 10:40:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 10:40:42] [NSE BULK] API GET status=200
+[2025-07-01 10:40:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 10:40:43] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 10:40:43] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 10:40:44] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 10:40:44] [NSE BLOCK] API GET status=200
+[2025-07-01 10:40:44] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 10:40:45] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 10:40:45] [NSE BLOCK] API GET status=200
+[2025-07-01 10:40:45] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 11:10:42] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 11:10:42] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 11:10:43] [NSE BULK] Homepage GET status=200
+[2025-07-01 11:10:43] [NSE BULK] Homepage GET status=200
+[2025-07-01 11:10:43] [NSE BULK] API GET status=200
+[2025-07-01 11:10:43] [NSE BULK] API GET status=200
+[2025-07-01 11:10:43] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 11:10:43] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 11:10:44] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 11:10:44] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 11:10:45] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 11:10:45] [NSE BLOCK] API GET status=200
+[2025-07-01 11:10:45] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 11:10:45] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 11:10:45] [NSE BLOCK] API GET status=200
+[2025-07-01 11:10:45] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 11:40:54] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 11:40:54] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 11:40:54] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 11:40:54] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 11:40:55] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 11:40:55] [NSE BULK] Homepage GET status=200
+[2025-07-01 11:40:55] [NSE BLOCK] API GET status=200
+[2025-07-01 11:40:55] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 11:40:55] [NSE BULK] Homepage GET status=200
+[2025-07-01 11:40:55] [NSE BULK] API GET status=200
+[2025-07-01 11:40:55] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 11:40:55] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 11:40:55] [NSE BULK] API GET status=200
+[2025-07-01 11:40:55] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 11:40:55] [NSE BLOCK] API GET status=200
+[2025-07-01 11:40:55] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 12:10:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 12:10:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 12:10:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 12:10:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 12:10:42] [NSE BULK] API GET status=200
+[2025-07-01 12:10:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 12:10:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 12:10:42] [NSE BULK] API GET status=200
+[2025-07-01 12:10:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 12:10:42] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 12:10:42] [NSE BLOCK] API GET status=200
+[2025-07-01 12:10:42] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 12:10:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 12:10:43] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 12:10:43] [NSE BLOCK] API GET status=200
+[2025-07-01 12:10:43] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 12:40:40] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 12:40:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 12:40:41] [NSE BULK] Homepage GET status=200
+[2025-07-01 12:40:41] [NSE BULK] API GET status=200
+[2025-07-01 12:40:41] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 12:40:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 12:40:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 12:40:42] [NSE BULK] API GET status=200
+[2025-07-01 12:40:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 12:40:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 12:40:42] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 12:40:42] [NSE BLOCK] API GET status=200
+[2025-07-01 12:40:42] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 12:40:42] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 12:40:42] [NSE BLOCK] API GET status=200
+[2025-07-01 12:40:42] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 13:10:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 13:10:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 13:10:42] [NSE BULK] API GET status=200
+[2025-07-01 13:10:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 13:10:42] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 13:10:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 13:10:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 13:10:43] [NSE BULK] Homepage GET status=200
+[2025-07-01 13:10:43] [NSE BULK] API GET status=200
+[2025-07-01 13:10:43] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 13:10:43] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 13:10:43] [NSE BLOCK] API GET status=200
+[2025-07-01 13:10:43] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 13:10:43] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 13:10:43] [NSE BLOCK] API GET status=200
+[2025-07-01 13:10:43] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 13:40:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 13:40:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 13:40:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 13:40:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 13:40:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 13:40:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 13:40:42] [NSE BULK] API GET status=200
+[2025-07-01 13:40:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 13:40:42] [NSE BULK] API GET status=200
+[2025-07-01 13:40:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 13:40:42] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 13:40:43] [NSE BLOCK] API GET status=200
+[2025-07-01 13:40:43] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 13:40:43] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 13:40:43] [NSE BLOCK] API GET status=200
+[2025-07-01 13:40:43] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 14:10:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 14:10:42] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 14:10:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 14:10:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 14:10:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 14:10:42] [NSE BULK] API GET status=200
+[2025-07-01 14:10:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 14:10:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 14:10:42] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 14:10:43] [NSE BULK] API GET status=200
+[2025-07-01 14:10:43] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 14:10:43] [NSE BLOCK] API GET status=200
+[2025-07-01 14:10:43] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 14:10:43] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 14:10:43] [NSE BLOCK] API GET status=200
+[2025-07-01 14:10:43] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 14:40:40] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 14:40:41] [NSE BULK] Homepage GET status=200
+[2025-07-01 14:40:41] [NSE BULK] API GET status=200
+[2025-07-01 14:40:41] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 14:40:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 14:40:42] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 14:40:43] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 14:40:43] [NSE BLOCK] API GET status=200
+[2025-07-01 14:40:43] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 14:40:43] [NSE BULK] Homepage GET status=200
+[2025-07-01 14:40:43] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 14:40:43] [NSE BULK] API GET status=200
+[2025-07-01 14:40:43] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 14:40:43] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 14:40:44] [NSE BLOCK] API GET status=200
+[2025-07-01 14:40:44] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 15:10:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 15:10:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 15:10:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 15:10:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 15:10:42] [NSE BULK] API GET status=200
+[2025-07-01 15:10:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 15:10:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 15:10:42] [NSE BULK] API GET status=200
+[2025-07-01 15:10:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 15:10:43] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 15:10:43] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 15:10:43] [NSE BLOCK] API GET status=200
+[2025-07-01 15:10:43] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 15:10:43] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 15:10:43] [NSE BLOCK] API GET status=200
+[2025-07-01 15:10:43] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 15:40:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 15:40:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 15:40:41] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 15:40:41] [NSE BULK] Homepage GET status=200
+[2025-07-01 15:40:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 15:40:42] [NSE BULK] API GET status=200
+[2025-07-01 15:40:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 15:40:42] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 15:40:42] [NSE BLOCK] API GET status=200
+[2025-07-01 15:40:42] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 15:40:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 15:40:42] [NSE BULK] API GET status=200
+[2025-07-01 15:40:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 15:40:42] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 15:40:42] [NSE BLOCK] API GET status=200
+[2025-07-01 15:40:42] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 16:10:42] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 16:10:43] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 16:10:43] [NSE BLOCK] API GET status=200
+[2025-07-01 16:10:43] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 16:10:45] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 16:10:46] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 16:10:46] [NSE BULK] Homepage GET status=200
+[2025-07-01 16:10:46] [NSE BULK] API GET status=200
+[2025-07-01 16:10:46] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 16:10:46] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 16:10:46] [NSE BLOCK] API GET status=200
+[2025-07-01 16:10:46] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 16:11:11] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 16:11:42] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-01 16:12:10] [NSE BULK] Attempt 3: from=01-06-2025 to=01-07-2025
+[2025-07-01 16:12:10] [NSE BULK] Homepage GET status=200
+[2025-07-01 16:12:10] [NSE BULK] API GET status=200
+[2025-07-01 16:12:10] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 16:35:25] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 16:35:26] [NSE BULK] Homepage GET status=200
+[2025-07-01 16:35:26] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 16:35:26] [NSE BULK] API GET status=200
+[2025-07-01 16:35:26] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 16:35:26] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 16:35:26] [NSE BLOCK] API GET status=200
+[2025-07-01 16:35:26] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 16:40:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 16:40:41] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 16:40:41] [NSE BULK] Homepage GET status=200
+[2025-07-01 16:40:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 16:40:41] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 16:40:41] [NSE BULK] API GET status=200
+[2025-07-01 16:40:41] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 16:40:42] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 16:40:42] [NSE BLOCK] API GET status=200
+[2025-07-01 16:40:42] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 16:40:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 16:40:42] [NSE BULK] API GET status=200
+[2025-07-01 16:40:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 16:40:42] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 16:40:42] [NSE BLOCK] API GET status=200
+[2025-07-01 16:40:42] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 17:10:41] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 17:10:41] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 17:10:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 17:10:42] [NSE BULK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 17:10:42] [NSE BULK] API GET status=200
+[2025-07-01 17:10:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 17:10:42] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 17:10:42] [NSE BLOCK] API GET status=200
+[2025-07-01 17:10:42] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-01 17:10:42] [NSE BULK] Homepage GET status=200
+[2025-07-01 17:10:42] [NSE BULK] API GET status=200
+[2025-07-01 17:10:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-01 17:10:43] [NSE BLOCK] Attempt 1: from=01-06-2025 to=01-07-2025
+[2025-07-01 17:10:43] [NSE BLOCK] Homepage GET status=200
+[2025-07-01 17:10:43] [NSE BLOCK] API GET status=200
+[2025-07-01 17:10:43] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-02 15:44:19] [NSE BLOCK] Attempt 1: from=02-06-2025 to=02-07-2025
+[2025-07-02 15:44:20] [NSE BLOCK] Homepage GET status=200
+[2025-07-02 15:44:20] [NSE BLOCK] API GET status=200
+[2025-07-02 15:44:20] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-02 15:44:20] [NSE BULK] Attempt 1: from=02-06-2025 to=02-07-2025
+[2025-07-02 15:44:20] [NSE BULK] Homepage GET status=200
+[2025-07-02 15:44:21] [NSE BULK] API GET status=200
+[2025-07-02 15:44:21] [NSE BULK] Response JSON keys: ['data']
+[2025-07-02 15:48:12] [NSE BULK] Attempt 1: from=02-06-2025 to=02-07-2025
+[2025-07-02 15:48:12] [NSE BLOCK] Attempt 1: from=02-06-2025 to=02-07-2025
+[2025-07-02 15:48:13] [NSE BLOCK] Homepage GET status=200
+[2025-07-02 15:48:13] [NSE BLOCK] API GET status=200
+[2025-07-02 15:48:13] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-02 15:48:13] [NSE BULK] Homepage GET status=200
+[2025-07-02 15:48:13] [NSE BULK] API GET status=200
+[2025-07-02 15:48:13] [NSE BULK] Response JSON keys: ['data']
+[2025-07-02 15:51:17] [NSE BULK] Attempt 1: from=02-06-2025 to=02-07-2025
+[2025-07-02 15:51:18] [NSE BULK] Homepage GET status=200
+[2025-07-02 15:51:18] [NSE BULK] API GET status=200
+[2025-07-02 15:51:18] [NSE BULK] Response JSON keys: ['data']
+[2025-07-02 15:51:18] [NSE BLOCK] Attempt 1: from=02-06-2025 to=02-07-2025
+[2025-07-02 15:51:19] [NSE BLOCK] Homepage GET status=200
+[2025-07-02 15:51:19] [NSE BLOCK] API GET status=200
+[2025-07-02 15:51:19] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-02 15:57:20] [NSE BULK] Attempt 1: from=02-06-2025 to=02-07-2025
+[2025-07-02 15:57:20] [NSE BLOCK] Attempt 1: from=02-06-2025 to=02-07-2025
+[2025-07-02 15:57:21] [NSE BULK] Homepage GET status=200
+[2025-07-02 15:57:21] [NSE BULK] API GET status=200
+[2025-07-02 15:57:21] [NSE BULK] Response JSON keys: ['data']
+[2025-07-02 15:57:21] [NSE BLOCK] Homepage GET status=200
+[2025-07-02 15:57:21] [NSE BLOCK] API GET status=200
+[2025-07-02 15:57:21] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-02 16:23:11] [NSE BULK] Attempt 1: from=02-06-2025 to=02-07-2025
+[2025-07-02 16:23:11] [NSE BLOCK] Attempt 1: from=02-06-2025 to=02-07-2025
+[2025-07-02 16:23:12] [NSE BLOCK] Homepage GET status=200
+[2025-07-02 16:23:12] [NSE BULK] Homepage GET status=200
+[2025-07-02 16:23:12] [NSE BLOCK] API GET status=200
+[2025-07-02 16:23:12] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-02 16:23:12] [NSE BULK] API GET status=200
+[2025-07-02 16:23:12] [NSE BULK] Response JSON keys: ['data']
+[2025-07-02 16:32:21] [NSE BULK] Attempt 1: from=02-06-2025 to=02-07-2025
+[2025-07-02 16:32:22] [NSE BLOCK] Attempt 1: from=02-06-2025 to=02-07-2025
+[2025-07-02 16:32:22] [NSE BULK] Homepage GET status=200
+[2025-07-02 16:32:22] [NSE BLOCK] Homepage GET status=200
+[2025-07-02 16:32:22] [NSE BULK] API GET status=200
+[2025-07-02 16:32:22] [NSE BULK] Response JSON keys: ['data']
+[2025-07-02 16:32:22] [NSE BLOCK] API GET status=200
+[2025-07-02 16:32:22] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 09:10:58] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 09:10:58] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 09:10:59] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 09:10:59] [NSE BULK] Homepage GET status=200
+[2025-07-03 09:10:59] [NSE BLOCK] API GET status=200
+[2025-07-03 09:10:59] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 09:10:59] [NSE BULK] API GET status=200
+[2025-07-03 09:10:59] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 09:14:59] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 09:15:00] [NSE BULK] Homepage GET status=200
+[2025-07-03 09:15:00] [NSE BULK] API GET status=200
+[2025-07-03 09:15:00] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 09:15:01] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 09:15:01] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 09:15:01] [NSE BLOCK] API GET status=200
+[2025-07-03 09:15:01] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 09:46:01] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 09:46:02] [NSE BULK] Homepage GET status=200
+[2025-07-03 09:46:02] [NSE BULK] API GET status=200
+[2025-07-03 09:46:02] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 09:46:03] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 09:46:04] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 09:46:04] [NSE BLOCK] API GET status=200
+[2025-07-03 09:46:04] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 09:49:58] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 09:49:58] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 09:49:59] [NSE BULK] Homepage GET status=200
+[2025-07-03 09:49:59] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 09:49:59] [NSE BULK] API GET status=200
+[2025-07-03 09:49:59] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 09:49:59] [NSE BLOCK] API GET status=200
+[2025-07-03 09:49:59] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 10:20:55] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 10:20:56] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 10:20:56] [NSE BULK] Homepage GET status=200
+[2025-07-03 10:20:56] [NSE BULK] API GET status=200
+[2025-07-03 10:20:56] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 10:20:57] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 10:20:57] [NSE BLOCK] API GET status=200
+[2025-07-03 10:20:57] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 10:24:58] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 10:24:59] [NSE BULK] Homepage GET status=200
+[2025-07-03 10:24:59] [NSE BULK] API GET status=200
+[2025-07-03 10:24:59] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 10:24:59] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 10:25:00] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 10:25:00] [NSE BLOCK] API GET status=200
+[2025-07-03 10:25:00] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 10:56:06] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 10:56:07] [NSE BULK] Homepage GET status=200
+[2025-07-03 10:56:07] [NSE BULK] API GET status=200
+[2025-07-03 10:56:07] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 10:56:08] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 10:56:08] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 10:56:08] [NSE BLOCK] API GET status=200
+[2025-07-03 10:56:08] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 10:59:58] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 10:59:59] [NSE BULK] Homepage GET status=200
+[2025-07-03 10:59:59] [NSE BULK] API GET status=200
+[2025-07-03 10:59:59] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 10:59:59] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 11:00:01] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 11:00:01] [NSE BLOCK] API GET status=200
+[2025-07-03 11:00:01] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 11:11:42] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 11:11:43] [NSE BULK] Homepage GET status=200
+[2025-07-03 11:11:43] [NSE BULK] API GET status=200
+[2025-07-03 11:11:43] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 11:11:43] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 11:11:44] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 11:11:44] [NSE BLOCK] API GET status=200
+[2025-07-03 11:11:44] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 11:31:24] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 11:31:25] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 11:31:26] [NSE BULK] Attempt 2: from=03-06-2025 to=03-07-2025
+[2025-07-03 11:31:26] [NSE BULK] Homepage GET status=200
+[2025-07-03 11:31:27] [NSE BLOCK] Attempt 2: from=03-06-2025 to=03-07-2025
+[2025-07-03 11:31:27] [NSE BULK] API GET status=200
+[2025-07-03 11:31:27] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 11:31:27] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 11:31:27] [NSE BLOCK] API GET status=200
+[2025-07-03 11:31:27] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 11:46:42] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 11:46:43] [NSE BULK] Homepage GET status=200
+[2025-07-03 11:46:43] [NSE BULK] API GET status=200
+[2025-07-03 11:46:43] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 11:46:44] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 11:46:44] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 11:46:44] [NSE BLOCK] API GET status=200
+[2025-07-03 11:46:44] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 11:52:47] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 11:52:47] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 11:52:47] [NSE BLOCK] Homepage GET status=502
+[2025-07-03 11:52:47] [NSE BLOCK] API GET status=200
+[2025-07-03 11:52:47] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 11:52:48] [NSE BULK] Homepage GET status=200
+[2025-07-03 11:52:48] [NSE BULK] API GET status=200
+[2025-07-03 11:52:48] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 11:56:43] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 11:56:43] [NSE BULK] Homepage GET status=200
+[2025-07-03 11:56:44] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 11:56:44] [NSE BULK] API GET status=200
+[2025-07-03 11:56:44] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 11:56:44] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 11:56:44] [NSE BLOCK] API GET status=200
+[2025-07-03 11:56:44] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 12:07:55] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 12:07:55] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 12:08:26] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 12:08:26] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 12:08:58] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 12:08:58] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 12:12:18] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 12:12:18] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 12:12:49] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 12:12:49] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 12:13:21] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 12:13:21] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-03 12:15:47] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 12:15:48] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 12:15:48] [NSE BULK] Homepage GET status=200
+[2025-07-03 12:15:48] [NSE BULK] API GET status=200
+[2025-07-03 12:15:48] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 12:15:49] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 12:15:49] [NSE BLOCK] API GET status=200
+[2025-07-03 12:15:49] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 12:16:01] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 12:16:02] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 12:16:02] [NSE BULK] Homepage GET status=200
+[2025-07-03 12:16:02] [NSE BULK] API GET status=200
+[2025-07-03 12:16:02] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 12:16:02] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 12:16:02] [NSE BLOCK] API GET status=200
+[2025-07-03 12:16:02] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 12:20:53] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 12:20:54] [NSE BULK] Homepage GET status=200
+[2025-07-03 12:20:54] [NSE BULK] API GET status=200
+[2025-07-03 12:20:54] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 12:20:54] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 12:20:55] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 12:20:55] [NSE BLOCK] API GET status=200
+[2025-07-03 12:20:55] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 15:22:44] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 15:22:45] [NSE BULK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 15:22:45] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 15:22:45] [NSE BULK] Homepage GET status=200
+[2025-07-03 15:22:45] [NSE BLOCK] Attempt 1: from=03-06-2025 to=03-07-2025
+[2025-07-03 15:22:45] [NSE BULK] API GET status=200
+[2025-07-03 15:22:45] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 15:22:45] [NSE BULK] Homepage GET status=200
+[2025-07-03 15:22:45] [NSE BULK] API GET status=200
+[2025-07-03 15:22:45] [NSE BULK] Response JSON keys: ['data']
+[2025-07-03 15:22:46] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 15:22:46] [NSE BLOCK] Homepage GET status=200
+[2025-07-03 15:22:46] [NSE BLOCK] API GET status=200
+[2025-07-03 15:22:46] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-03 15:22:46] [NSE BLOCK] API GET status=200
+[2025-07-03 15:22:46] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-04 09:08:21] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-04 09:08:21] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-04 09:08:21] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-04 09:08:52] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-04 09:08:52] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-04 09:08:52] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-04 09:08:52] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-04 09:09:24] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-04 09:09:24] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-04 09:09:24] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 198, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-04 09:09:24] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 272, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 482, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-04 12:42:36] [NSE BULK] Attempt 1: from=04-06-2025 to=04-07-2025
+[2025-07-04 12:42:37] [NSE BLOCK] Attempt 1: from=04-06-2025 to=04-07-2025
+[2025-07-04 12:42:37] [NSE BULK] Homepage GET status=200
+[2025-07-04 12:42:37] [NSE BLOCK] Homepage GET status=200
+[2025-07-04 12:42:37] [NSE BULK] API GET status=200
+[2025-07-04 12:42:37] [NSE BULK] Response JSON keys: ['data']
+[2025-07-04 12:42:37] [NSE BLOCK] API GET status=200
+[2025-07-04 12:42:37] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-04 12:42:38] [NSE BULK] Attempt 1: from=04-06-2025 to=04-07-2025
+[2025-07-04 12:42:38] [NSE BLOCK] Attempt 1: from=04-06-2025 to=04-07-2025
+[2025-07-04 12:42:39] [NSE BULK] Homepage GET status=200
+[2025-07-04 12:42:39] [NSE BLOCK] Homepage GET status=200
+[2025-07-04 12:42:39] [NSE BLOCK] API GET status=200
+[2025-07-04 12:42:39] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-04 12:42:39] [NSE BULK] API GET status=200
+[2025-07-04 12:42:39] [NSE BULK] Response JSON keys: ['data']
+[2025-07-04 13:35:14] [NSE BULK] Attempt 1: from=04-06-2025 to=04-07-2025
+[2025-07-04 13:35:15] [NSE BULK] Homepage GET status=200
+[2025-07-04 13:35:15] [NSE BULK] API GET status=200
+[2025-07-04 13:35:15] [NSE BULK] Response JSON keys: ['data']
+[2025-07-04 13:35:16] [NSE BLOCK] Attempt 1: from=04-06-2025 to=04-07-2025
+[2025-07-04 13:35:16] [NSE BLOCK] Homepage GET status=200
+[2025-07-04 13:35:17] [NSE BLOCK] API GET status=200
+[2025-07-04 13:35:17] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-04 13:36:18] [NSE BULK] Attempt 1: from=04-06-2025 to=04-07-2025
+[2025-07-04 13:36:19] [NSE BULK] Homepage GET status=200
+[2025-07-04 13:36:19] [NSE BULK] API GET status=200
+[2025-07-04 13:36:19] [NSE BULK] Response JSON keys: ['data']
+[2025-07-04 13:36:20] [NSE BLOCK] Attempt 1: from=04-06-2025 to=04-07-2025
+[2025-07-04 13:36:20] [NSE BLOCK] Homepage GET status=200
+[2025-07-04 13:36:20] [NSE BLOCK] API GET status=200
+[2025-07-04 13:36:20] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-04 16:36:10] [NSE BULK] Attempt 1: from=04-06-2025 to=04-07-2025
+[2025-07-04 16:36:10] [NSE BULK] Homepage GET status=200
+[2025-07-04 16:36:11] [NSE BLOCK] Attempt 1: from=04-06-2025 to=04-07-2025
+[2025-07-04 16:36:11] [NSE BULK] API GET status=200
+[2025-07-04 16:36:11] [NSE BULK] Response JSON keys: ['data']
+[2025-07-04 16:36:11] [NSE BLOCK] Homepage GET status=200
+[2025-07-04 16:36:11] [NSE BLOCK] API GET status=200
+[2025-07-04 16:36:11] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-04 16:36:12] [NSE BULK] Attempt 1: from=04-06-2025 to=04-07-2025
+[2025-07-04 16:36:13] [NSE BULK] Homepage GET status=200
+[2025-07-04 16:36:13] [NSE BULK] API GET status=200
+[2025-07-04 16:36:13] [NSE BULK] Response JSON keys: ['data']
+[2025-07-04 16:36:13] [NSE BLOCK] Attempt 1: from=04-06-2025 to=04-07-2025
+[2025-07-04 16:36:14] [NSE BLOCK] Homepage GET status=200
+[2025-07-04 16:36:14] [NSE BLOCK] API GET status=200
+[2025-07-04 16:36:14] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-07 10:02:12] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 212, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 496, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-07 10:02:12] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 212, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 496, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-07 10:02:12] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 286, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 496, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-07 10:02:12] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 286, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 496, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-07 10:02:43] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 212, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 496, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-07 10:02:43] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 212, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 496, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-07 10:02:43] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 286, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 496, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-07 10:02:43] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 286, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 496, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-07 10:03:16] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 212, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 496, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-07 10:03:16] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 212, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 496, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-07 10:03:16] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 286, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 496, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-07 10:03:16] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 286, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Project\backend\python\scraper.py", line 496, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-07-07 13:00:28] [NSE BULK] Attempt 1: from=07-06-2025 to=07-07-2025
+[2025-07-07 13:00:29] [NSE BULK] Homepage GET status=200
+[2025-07-07 13:00:29] [NSE BULK] API GET status=200
+[2025-07-07 13:00:29] [NSE BULK] Response JSON keys: ['data']
+[2025-07-07 13:00:30] [NSE BLOCK] Attempt 1: from=07-06-2025 to=07-07-2025
+[2025-07-07 13:00:31] [NSE BLOCK] Homepage GET status=200
+[2025-07-07 13:00:31] [NSE BLOCK] API GET status=200
+[2025-07-07 13:00:31] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-07 13:00:41] [NSE BULK] Attempt 1: from=07-06-2025 to=07-07-2025
+[2025-07-07 13:00:42] [NSE BULK] Homepage GET status=200
+[2025-07-07 13:00:42] [NSE BULK] API GET status=200
+[2025-07-07 13:00:42] [NSE BULK] Response JSON keys: ['data']
+[2025-07-07 13:00:43] [NSE BLOCK] Attempt 1: from=07-06-2025 to=07-07-2025
+[2025-07-07 13:00:43] [NSE BLOCK] Homepage GET status=200
+[2025-07-07 13:00:44] [NSE BLOCK] API GET status=200
+[2025-07-07 13:00:44] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-07 16:47:55] [NSE BLOCK] Attempt 1: from=07-06-2025 to=07-07-2025
+[2025-07-07 16:47:55] [NSE BULK] Attempt 1: from=07-06-2025 to=07-07-2025
+[2025-07-07 16:47:56] [NSE BULK] Homepage GET status=200
+[2025-07-07 16:47:56] [NSE BLOCK] Homepage GET status=200
+[2025-07-07 16:47:57] [NSE BLOCK] API GET status=200
+[2025-07-07 16:47:57] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-07 16:47:57] [NSE BULK] API GET status=200
+[2025-07-07 16:47:57] [NSE BULK] Response JSON keys: ['data']
+[2025-07-08 09:17:59] [NSE BLOCK] Attempt 1: from=08-06-2025 to=08-07-2025
+[2025-07-08 09:17:59] [NSE BULK] Attempt 1: from=08-06-2025 to=08-07-2025
+[2025-07-08 09:18:00] [NSE BULK] Homepage GET status=200
+[2025-07-08 09:18:00] [NSE BULK] Attempt 1: from=08-06-2025 to=08-07-2025
+[2025-07-08 09:18:00] [NSE BLOCK] Homepage GET status=200
+[2025-07-08 09:18:01] [NSE BLOCK] API GET status=200
+[2025-07-08 09:18:01] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-08 09:18:01] [NSE BULK] API GET status=200
+[2025-07-08 09:18:01] [NSE BULK] Response JSON keys: ['data']
+[2025-07-08 09:18:02] [NSE BULK] Homepage GET status=200
+[2025-07-08 09:18:02] [NSE BULK] API GET status=200
+[2025-07-08 09:18:02] [NSE BULK] Response JSON keys: ['data']
+[2025-07-08 09:18:03] [NSE BLOCK] Attempt 1: from=08-06-2025 to=08-07-2025
+[2025-07-08 09:18:03] [NSE BLOCK] Homepage GET status=200
+[2025-07-08 09:18:04] [NSE BLOCK] API GET status=200
+[2025-07-08 09:18:04] [NSE BLOCK] Response JSON keys: ['data']
+[2025-07-08 12:17:40] [NSE BULK] Attempt 1: from=08-06-2025 to=08-07-2025
+[2025-07-08 12:17:41] [NSE BULK] Homepage GET status=200
+[2025-07-08 12:17:41] [NSE BLOCK] Attempt 1: from=08-06-2025 to=08-07-2025
+[2025-07-08 12:17:41] [NSE BULK] API GET status=200
+[2025-07-08 12:17:41] [NSE BULK] Response JSON keys: ['data']
+[2025-07-08 12:17:42] [NSE BLOCK] Homepage GET status=200
+[2025-07-08 12:17:42] [NSE BLOCK] API GET status=200
+[2025-07-08 12:17:42] [NSE BLOCK] Response JSON keys: ['data']

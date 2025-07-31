@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Mutual Funds{% endblock %}
+
+{% block content %}
+<div class="mutual-fund-container">
+  <h2 class="text-center mb-4">Mutual <span class="text-primary">Funds</span></h2>
+  
+  <div class="d-flex flex-row main-content-wrapper">
+    <!-- Floating Filter Pane -->
+    <div class="filter-pane">
+      <div class="filter-header">
+        <h5>Funds</h5>
+      </div>
+      <div class="filter-group mb-4">
+        <div class="d-flex justify-content-between mb-2">
+          <button id="selectAllFunds" class="btn btn-sm btn-outline-primary">All</button>
+          <button id="deselectAllFunds" class="btn btn-sm btn-outline-danger">None</button>
+        </div>
+        <div id="fundBadges" class="badges-container"></div>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content-area">
+      <!-- Stock Filter Bar -->
+      <div class="stock-bar">
+        <select id="stockFilter" multiple></select>
+      </div>
+      <div id="output">Loading data...</div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/mf.css') }}">
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="{{ url_for('static', filename='js/mf.js') }}"></script>
+{% endblock %}

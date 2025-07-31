@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Deviation Dashboard{% endblock %}
+
+{% block content %}
+  <h1 class="text-center my-4">Deviation Dashboard</h1>
+  
+  <div class="container mb-5">
+    <div class="header">
+      <h2>Trade Deviation</h2>
+      <select id="trd-filter" multiple></select>
+    </div>
+    <div class="content-area" id="trd-graph-view"></div>
+  </div>
+
+  <div class="container mb-5">
+    <div class="header">
+      <h2>Delivery Deviation</h2>
+      <select id="deliv-filter" multiple></select>
+    </div>
+    <div class="content-area" id="deliv-graph-view"></div>
+  </div>
+
+  <div class="tooltip" id="tooltip"></div>
+{% endblock %}
+
+{% block extra_scripts %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/volume.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="{{ url_for('static', filename='js/volume.js') }}"></script>
+{% endblock %}

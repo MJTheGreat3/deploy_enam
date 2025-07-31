@@ -1,0 +1,25 @@
+# Ignore Python secrets and credentials
+*.json
+!config.example.json
+
+# Ignore token and client secret files specifically
+backend/python/token.json
+backend/python/client_secret.json
+
+# Virtual environments
+venv/
+.env
+.env.*
+
+# Pycache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
