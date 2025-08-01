@@ -11,20 +11,16 @@ RUN apt-get update && apt-get install -y \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
-# Add Google’s signing key (modern method) and Chrome repo
-RUN mkdir -p /etc/apt/keyrings && \
-    curl -fsSL https://dl.google.com/linux/linux_signing_key.pub \
-        | gpg --dearmor -o /etc/apt/keyrings/google-linux.gpg && \
-    echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/google-linux.gpg] http://dl.google.com/linux/chrome/deb/ stable main" \
-        > /etc/apt/sources.list.d/google-chrome.list
+# Install specific version of Chrome manually
+RUN wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_124.0.6367.91-1_amd64.deb && \
+    apt-get update && apt-get install -y ./google-chrome-stable_124.0.6367.91-1_amd64.deb && \
+    rm google-chrome-stable_124.0.6367.91-1_amd64.deb
 
-# Install specific version of Chrome and matching Chromedriver
-RUN apt-get update && \
-    apt-get install -y google-chrome-stable=124.0.6367.91-1 && \
-    wget -O /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com/124.0.6367.91/chromedriver_linux64.zip && \
+# Install matching ChromeDriver
+RUN wget -O /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com/124.0.6367.91/chromedriver_linux64.zip && \
     unzip /tmp/chromedriver.zip -d /usr/local/bin/ && \
     chmod +x /usr/local/bin/chromedriver && \
-    rm -rf /tmp/* /var/lib/apt/lists/*
+    rm -rf /tmp/*
 
 # Copy project files
 COPY backend/ .
