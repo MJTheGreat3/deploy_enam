@@ -13,6 +13,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
 from filelock import FileLock
+from pyvirtualdisplay import Display  # Virtual display support
 
 # === Settings ===
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -86,74 +87,71 @@ def extract_articles_from_html(html):
     return records
 
 def main():
-    chrome_options = Options()
-    # chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--disable-extensions")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--disable-infobars")
-    chrome_options.add_argument("--disable-blink-features=AutomationControlled")
-    chrome_options.page_load_strategy = "none"  # Don't wait for full load!
+    with Display(visible=0, size=(1920, 1080)):
+        chrome_options = Options()
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--disable-extensions")
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--disable-infobars")
+        chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+        chrome_options.page_load_strategy = "none"
 
-    prefs = {
-        "profile.managed_default_content_settings.images": 2,
-        "profile.managed_default_content_settings.stylesheets": 2,
-        "profile.managed_default_content_settings.fonts": 2
-    }
-    chrome_options.add_experimental_option("prefs", prefs)
+        prefs = {
+            "profile.managed_default_content_settings.images": 2,
+            "profile.managed_default_content_settings.stylesheets": 2,
+            "profile.managed_default_content_settings.fonts": 2
+        }
+        chrome_options.add_experimental_option("prefs", prefs)
 
-    driver = None
-    ul_html = None
+        driver = None
+        ul_html = None
 
-    try:
-        driver = webdriver.Chrome(options=chrome_options)
-        driver.set_page_load_timeout(WAIT_TIMEOUT)
-        
-        print(f"Opening {START_URL} ...")
-        driver.get(START_URL)
+        try:
+            driver = webdriver.Chrome(options=chrome_options)
+            driver.set_page_load_timeout(WAIT_TIMEOUT)
+            print(f"Opening {START_URL} ...")
+            driver.get(START_URL)
 
-        # Let initial stuff load
-        time.sleep(5)
-        driver.execute_script("window.stop();")  # Cancel any long-loading junk
+            time.sleep(5)
+            driver.execute_script("window.stop();")
 
-        # Now wait just for our target element
-        WebDriverWait(driver, WAIT_TIMEOUT, poll_frequency=1).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "ul[data-test='news-list']"))
-        )
-        ul_element = driver.find_element(By.CSS_SELECTOR, "ul[data-test='news-list']")
-        ul_html = ul_element.get_attribute('outerHTML')
+            WebDriverWait(driver, WAIT_TIMEOUT, poll_frequency=1).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "ul[data-test='news-list']"))
+            )
+            ul_element = driver.find_element(By.CSS_SELECTOR, "ul[data-test='news-list']")
+            ul_html = ul_element.get_attribute('outerHTML')
 
-    except TimeoutException:
-        print(f"ERROR: Timeout waiting for Investing.com page or elements.")
-        sys.exit(1)
+        except TimeoutException:
+            print("ERROR: Timeout waiting for Investing.com page or elements.")
+            sys.exit(1)
 
-    except Exception as e:
-        print(f"ERROR: Problem loading Investing.com page: {e}")
-        sys.exit(1)
+        except Exception as e:
+            print(f"ERROR: Problem loading Investing.com page: {e}")
+            sys.exit(1)
 
-    finally:
-        if driver:
-            driver.quit()
+        finally:
+            if driver:
+                driver.quit()
 
-    if not ul_html:
-        print("WARNING: Could not retrieve page content.")
-        return
+        if not ul_html:
+            print("WARNING: Could not retrieve page content.")
+            return
 
-    existing_links = read_existing_links()
-    all_new_records = []
+        existing_links = read_existing_links()
+        all_new_records = []
 
-    articles = extract_articles_from_html(ul_html)
-    for record in articles:
-        if record["Link"] in existing_links:
-            continue
-        all_new_records.append(record)
+        articles = extract_articles_from_html(ul_html)
+        for record in articles:
+            if record["Link"] in existing_links:
+                continue
+            all_new_records.append(record)
 
-    if all_new_records:
-        append_new_articles(all_new_records)
-        print(f"{len(all_new_records)} new articles added from Investing.com.")
-    else:
-        print("No new Investing.com articles found.")
+        if all_new_records:
+            append_new_articles(all_new_records)
+            print(f"{len(all_new_records)} new articles added from Investing.com.")
+        else:
+            print("No new Investing.com articles found.")
 
 if __name__ == "__main__":
     main()

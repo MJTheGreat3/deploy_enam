@@ -170,3 +170,4 @@ yarl
 yfinance
 zipp
 flask-cors
+pyvirtualdisplay

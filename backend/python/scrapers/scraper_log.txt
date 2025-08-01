@@ -857,3 +857,91 @@ Traceback (most recent call last):
     raise Exception("Resources too constrained after attempts.")
 Exception: Resources too constrained after attempts.
 
+[2025-08-01 10:10:56] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 110, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 10:10:56] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 184, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 10:10:58] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 184, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 10:10:58] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 110, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 10:11:27] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 110, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 10:11:27] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 184, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 10:11:29] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 184, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 10:11:29] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 110, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 10:11:30] [NSE BLOCK] Attempt 3: from=02-07-2025 to=01-08-2025
+[2025-08-01 10:11:30] [NSE BULK] Attempt 3: from=02-07-2025 to=01-08-2025
+[2025-08-01 10:11:32] [NSE BULK] Homepage GET status=200
+[2025-08-01 10:11:32] [NSE BLOCK] Homepage GET status=200
+[2025-08-01 10:11:32] [NSE BULK] API GET status=200
+[2025-08-01 10:11:32] [NSE BULK] Response JSON keys: ['data']
+[2025-08-01 10:11:32] [NSE BLOCK] API GET status=200
+[2025-08-01 10:11:32] [NSE BLOCK] Response JSON keys: ['data']
+[2025-08-01 10:11:32] [NSE BLOCK] Attempt 3: from=02-07-2025 to=01-08-2025
+[2025-08-01 10:11:32] [NSE BULK] Attempt 3: from=02-07-2025 to=01-08-2025
+[2025-08-01 10:11:33] [NSE BULK] Homepage GET status=200
+[2025-08-01 10:11:33] [NSE BULK] API GET status=200
+[2025-08-01 10:11:33] [NSE BULK] Response JSON keys: ['data']
+[2025-08-01 10:11:33] [NSE BLOCK] Homepage GET status=200
+[2025-08-01 10:11:33] [NSE BLOCK] API GET status=200
+[2025-08-01 10:11:33] [NSE BLOCK] Response JSON keys: ['data']

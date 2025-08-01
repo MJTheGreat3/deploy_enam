@@ -7,6 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import pandas as pd
 from filelock import FileLock
+from pyvirtualdisplay import Display  # 👈 NEW
 
 # Constants
 BASE_URL = "https://www.business-standard.com/latest-news"
@@ -17,15 +18,11 @@ LOCK_FILE = REPO_FILE + ".lock"
 ALLOWED_CATEGORIES = {"companies", "economy", "markets", "industry", "finance"}
 COLUMNS = ["Source", "Headline", "Link", "Category", "Time"]
 
-# How far back to allow
 MAX_AGE_HOURS = 24
 
-# ----------------------------------------------------------------------------
 def parse_bs_timestamp(time_text):
     try:
-        time_text = time_text.replace("Updated On :", "").strip()
-        time_text = time_text.lower().replace('ist', '').strip()
-
+        time_text = time_text.replace("Updated On :", "").strip().lower().replace('ist', '').strip()
         is_premium = False
         if 'premium' in time_text:
             is_premium = True
@@ -37,15 +34,12 @@ def parse_bs_timestamp(time_text):
 
         date_part = parts[0].strip().title()
         time_part = parts[1].strip().upper()
-        clean_time_str = f"{date_part} | {time_part}"
-
-        dt = datetime.strptime(clean_time_str, "%d %b %Y | %I:%M %p")
+        dt = datetime.strptime(f"{date_part} | {time_part}", "%d %b %Y | %I:%M %p")
         return dt, is_premium
 
     except Exception:
         return None, False
 
-# ----------------------------------------------------------------------------
 def load_existing_links():
     if not os.path.exists(REPO_FILE):
         return set()
@@ -55,7 +49,6 @@ def load_existing_links():
     except Exception:
         return set()
 
-# ----------------------------------------------------------------------------
 def extract_articles_from_soup(soup, existing_links, cutoff_datetime):
     container = soup.find('div', class_='article-listing')
     if not container:
@@ -108,37 +101,41 @@ def extract_articles_from_soup(soup, existing_links, cutoff_datetime):
 
     return new_entries, stop
 
-# ----------------------------------------------------------------------------
 def main():
     cutoff_datetime = datetime.now() - timedelta(hours=MAX_AGE_HOURS)
     existing_links = load_existing_links()
 
-    chrome_options = Options()
-    # chrome_options.add_argument("--headless=new")
-    chrome_options.add_argument("--log-level=3")
-    chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
-    driver = webdriver.Chrome(options=chrome_options)
+    # 🖥️ Start virtual display
+    with Display(visible=0, size=(1920, 1080)):  # Set visible=1 to actually see Chrome GUI on systems with X
+        chrome_options = Options()
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--window-size=1920,1080")
+        chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
-    all_new_entries = []
-    page_number = 1
-    stop_scraping = False
+        # Don't add headless so it runs in real mode
+        driver = webdriver.Chrome(options=chrome_options)
 
-    while not stop_scraping:
-        page_url = BASE_URL if page_number == 1 else f"{BASE_URL}/page-{page_number}"
-        driver.get(page_url)
-        time.sleep(5)
+        all_new_entries = []
+        page_number = 1
+        stop_scraping = False
 
-        soup = BeautifulSoup(driver.page_source, 'html.parser')
-        new_entries, stop_scraping = extract_articles_from_soup(soup, existing_links, cutoff_datetime)
+        while not stop_scraping:
+            page_url = BASE_URL if page_number == 1 else f"{BASE_URL}/page-{page_number}"
+            driver.get(page_url)
+            time.sleep(5)
 
-        all_new_entries.extend(new_entries)
+            soup = BeautifulSoup(driver.page_source, 'html.parser')
+            new_entries, stop_scraping = extract_articles_from_soup(soup, existing_links, cutoff_datetime)
 
-        if stop_scraping:
-            break
+            all_new_entries.extend(new_entries)
 
-        page_number += 1
+            if stop_scraping:
+                break
 
-    driver.quit()
+            page_number += 1
+
+        driver.quit()
 
     if not all_new_entries:
         print("No new articles added from Business Standard.")
@@ -156,6 +153,5 @@ def main():
 
     print(f"{len(all_new_entries)} articles added from Business Standard.")
 
-# ----------------------------------------------------------------------------
 if __name__ == "__main__":
     main()
