@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     wget unzip ca-certificates libnss3 libxss1 libasound2 \
     libatk-bridge2.0-0 libgtk-3-0 libdrm2 libgbm1 libxshmfence1 \
     xdg-utils fonts-liberation gcc libpq-dev python3-dev \
+    xauth \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
