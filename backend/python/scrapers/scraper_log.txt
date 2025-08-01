@@ -749,3 +749,111 @@ Traceback (most recent call last):
     raise Exception("Resources too constrained after attempts.")
 Exception: Resources too constrained after attempts.
 
+[2025-08-01 09:33:33] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 109, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 09:34:04] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 109, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 09:34:20] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 109, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 09:34:20] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 183, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 09:34:36] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 109, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 09:34:51] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 109, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 09:34:51] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 183, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 09:34:54] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 183, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 09:35:23] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 183, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 09:35:23] [NSE BULK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 109, in scrape_nse_bulk
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 09:35:25] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 183, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
+[2025-08-01 09:35:57] [NSE BLOCK] Exception:
+Traceback (most recent call last):
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\bulk_block.py", line 183, in scrape_nse_block
+    check_system_resources()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\test\Matt\Akash\site\site\backend\python\scrapers\common.py", line 125, in check_system_resources
+    raise Exception("Resources too constrained after attempts.")
+Exception: Resources too constrained after attempts.
+
