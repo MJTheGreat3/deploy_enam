@@ -184,6 +184,10 @@ def run_company_scrapers_async():
     threading.Thread(target=target, daemon=True).start()
 
 # === ROUTES ===
+@app.route("/healthz")
+def health():
+    return "OK", 200
+
 @app.route('/')
 def about():
     return render_template('about.html')

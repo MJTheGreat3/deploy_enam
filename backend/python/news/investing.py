@@ -24,6 +24,10 @@ HEADERS = ["Source", "Headline", "Link", "Category", "Time"]
 START_URL = "https://www.investing.com/news/latest-news"
 WAIT_TIMEOUT = 20
 
+# Hardcoded paths inside Docker image
+CHROMEDRIVER_PATH = "/usr/bin/chromedriver"
+CHROME_BINARY_PATH = "/usr/bin/chromium"
+
 def parse_category_from_link(link):
     try:
         path = urlparse(link).path
@@ -89,6 +93,7 @@ def extract_articles_from_html(html):
 def main():
     with Display(visible=0, size=(1920, 1080)):
         chrome_options = Options()
+        chrome_options.binary_location = CHROME_BINARY_PATH
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-extensions")
@@ -108,7 +113,7 @@ def main():
         ul_html = None
 
         try:
-            driver = webdriver.Chrome(options=chrome_options)
+            driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, options=chrome_options)
             driver.set_page_load_timeout(WAIT_TIMEOUT)
             print(f"Opening {START_URL} ...")
             driver.get(START_URL)

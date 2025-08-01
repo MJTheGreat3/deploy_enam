@@ -1,4 +1,3 @@
-import os
 import time
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -9,11 +8,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import concurrent.futures
 from datetime import datetime
+from pyvirtualdisplay import Display
 from .common import (
     log_debug, get_csv_path, append_unique_rows,
     check_system_resources, load_portfolio_symbols,
     remove_duplicates_from_csv_with_header, convert_nse_datetime
 )
+import os
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 USER_PORTFOLIO_CSV = os.path.abspath(os.path.join(SCRIPT_DIR, "../../user_portfolio.csv"))
@@ -158,32 +159,33 @@ def scrape_company_data(company):
                 driver.quit()
 
 def run_company_scrapers(only_new=False):
-    start_time = time.time()
-    companies = load_portfolio_symbols(only_new=only_new)
-    if not companies:
-        print("[WARN] No companies in portfolio, skipping company scraping")
-        return
+    with Display(visible=0, size=(1920, 1080)):
+        start_time = time.time()
+        companies = load_portfolio_symbols(only_new=only_new)
+        if not companies:
+            print("[WARN] No companies in portfolio, skipping company scraping")
+            return
 
-    tasks = [lambda c=c: scrape_company_data(c) for c in companies]
+        tasks = [lambda c=c: scrape_company_data(c) for c in companies]
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-        futures = [executor.submit(task) for task in tasks]
-        for future in concurrent.futures.as_completed(futures):
-            try:
-                future.result()
-            except:
-                pass
+        with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+            futures = [executor.submit(task) for task in tasks]
+            for future in concurrent.futures.as_completed(futures):
+                try:
+                    future.result()
+                except:
+                    pass
 
-    for filename in ["announcements.csv", "insider_trading.csv"]:
-        full_path = get_csv_path(filename)
-        if os.path.exists(full_path):
-            remove_duplicates_from_csv_with_header(full_path)
+        for filename in ["announcements.csv", "insider_trading.csv"]:
+            full_path = get_csv_path(filename)
+            if os.path.exists(full_path):
+                remove_duplicates_from_csv_with_header(full_path)
 
-    if only_new:
-        if os.path.exists(USER_PORTFOLIO_CSV):
-            df = pd.read_csv(USER_PORTFOLIO_CSV)
-            if 'status' in df.columns:
-                df.loc[df['status'].str.upper() == "NEW", 'status'] = "Old"
-                df.to_csv(USER_PORTFOLIO_CSV, index=False)
+        if only_new:
+            if os.path.exists(USER_PORTFOLIO_CSV):
+                df = pd.read_csv(USER_PORTFOLIO_CSV)
+                if 'status' in df.columns:
+                    df.loc[df['status'].str.upper() == "NEW", 'status'] = "Old"
+                    df.to_csv(USER_PORTFOLIO_CSV, index=False)
 
-    print(f"Company scraping completed in {time.time()-start_time:.2f} seconds")
+        print(f"Company scraping completed in {time.time()-start_time:.2f} seconds")

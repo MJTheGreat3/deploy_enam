@@ -4,10 +4,11 @@ import time
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import pandas as pd
 from filelock import FileLock
-from pyvirtualdisplay import Display  # 👈 NEW
+from pyvirtualdisplay import Display
 
 # Constants
 BASE_URL = "https://www.business-standard.com/latest-news"
@@ -36,7 +37,6 @@ def parse_bs_timestamp(time_text):
         time_part = parts[1].strip().upper()
         dt = datetime.strptime(f"{date_part} | {time_part}", "%d %b %Y | %I:%M %p")
         return dt, is_premium
-
     except Exception:
         return None, False
 
@@ -105,16 +105,17 @@ def main():
     cutoff_datetime = datetime.now() - timedelta(hours=MAX_AGE_HOURS)
     existing_links = load_existing_links()
 
-    # 🖥️ Start virtual display
-    with Display(visible=0, size=(1920, 1080)):  # Set visible=1 to actually see Chrome GUI on systems with X
+    # 🖥️ Start virtual display for non-headless Chromium
+    with Display(visible=0, size=(1920, 1080)):
         chrome_options = Options()
+        chrome_options.binary_location = "/usr/bin/chromium"
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--window-size=1920,1080")
         chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
-        # Don't add headless so it runs in real mode
-        driver = webdriver.Chrome(options=chrome_options)
+        service = Service(executable_path="/usr/bin/chromedriver")
+        driver = webdriver.Chrome(service=service, options=chrome_options)
 
         all_new_entries = []
         page_number = 1
@@ -129,10 +130,8 @@ def main():
             new_entries, stop_scraping = extract_articles_from_soup(soup, existing_links, cutoff_datetime)
 
             all_new_entries.extend(new_entries)
-
             if stop_scraping:
                 break
-
             page_number += 1
 
         driver.quit()
